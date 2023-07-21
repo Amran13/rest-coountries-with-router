@@ -15,9 +15,9 @@ function App() {
       element : <Countries/>
     },
     {
-      path : '/country/:countryId',
+      path : '/country/:countryName',
       loader : async ({params}) => {
-        return fetch(`https://restcountries.com/v3.1/alpha/${params.countryId}`)
+        return fetch(`https://restcountries.com/v3.1/name/${params.countryName}`)
       },
       element : <CountryDetail/>
     }

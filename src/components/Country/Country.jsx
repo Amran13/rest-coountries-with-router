@@ -7,7 +7,7 @@ const Country = ({country}) => {
     return (
         <div>
             <h4>{name.common}</h4>
-            <Link to={`/country/${ccn3}`}><h6> {ccn3} </h6></Link>
+            <Link to={`/country/${name.common}`}><h6> {ccn3} </h6></Link>
         </div>
     );
 };
